@@ -8,15 +8,15 @@ public class App {
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
       Intro game = new Intro();
-      //game.start();
+      
       System.out.println("It looks like you want to be dealt in, is that true?");
       
       String start = scanner.nextLine();
       System.out.println("");
       System.out.println("");
-      while (game.answer().equalsIgnoreCase("yes"))
+      while (game.answer().equals(start))
       {
-        if (!game.answer().equalsIgnoreCase("yes"))
+        if (!game.answer().equals(start))
         {
           
           System.out.println("Sorry I didn't quite get that.");
@@ -24,7 +24,8 @@ public class App {
           start = scanner.nextLine();
           
         }
-        if (start.equals("yes") || start.equals("Yes"))
+
+        if (game.answer().equals(start))
         {
           System.out.println("Alright lets start!");
           System.out.println("");
@@ -47,6 +48,7 @@ public class App {
       drawOrHold();
       
       System.out.println("Now that you know what the game is like, how many times would you like to play again?"); 
+      
       //Here it is asking you how many times you would like to play after you already played your first game.
       int rerun = scanner.nextInt();
       int i = 0;

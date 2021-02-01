@@ -3,8 +3,11 @@ import java.util.Random;
 
 public class Intro {
 
-public String answer(){
-  String answer = "yes";
+String answer = "yes";
+
+
+public String getAnswer(){
+  
   return answer;
 
 }
