@@ -10,56 +10,64 @@ public class App {
       Intro game = new Intro();
       
       System.out.println("It looks like you want to be dealt in, is that true?");
+      System.out.println("Enter '1' for yes and '2' for no");
       
-      String start = scanner.nextLine();
+      int start = scanner.nextInt();
       System.out.println("");
       System.out.println("");
-      while (game.answer().equals(start))
+     
+      
+      while (start == game.getAnswer())
       {
-        if (!game.answer().equals(start))
-        {
-          
-          System.out.println("Sorry I didn't quite get that.");
-          System.out.println("");
-          start = scanner.nextLine();
-          
-        }
 
-        if (game.answer().equals(start))
+        if (start == game.getAnswer())
         {
           System.out.println("Alright lets start!");
           System.out.println("");
-          break;
-        } 
-      }
-
-
-
-
-
-
-
-
-
-
-
+          drawOrHold();
+          System.out.println("Now that you know what the game is like, how many times would you like to play again?"); 
       
-      //Down below is the function that will actually play the game.
-      drawOrHold();
       
-      System.out.println("Now that you know what the game is like, how many times would you like to play again?"); 
-      
-      //Here it is asking you how many times you would like to play after you already played your first game.
-      int rerun = scanner.nextInt();
-      int i = 0;
-      while (i < rerun)
-      {
+          int rerun = scanner.nextInt();
+          int i = 0;
+          while (i < rerun)
+           {
           i++;
           drawOrHold();
           
       }
 
     }
+        } 
+        if (start == 2) 
+        {
+          
+          System.out.println("Sorry I didn't quite get that.");
+          System.out.println("");
+          start = scanner.nextInt();
+          
+        }
+        if(!(start == game.getAnswer()) && !(start == 2))
+        {
+          
+          System.out.println("I don't understand.");
+          System.out.println("");
+          start = scanner.nextInt();
+          
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+      
 
 
     public static void drawOrHold()

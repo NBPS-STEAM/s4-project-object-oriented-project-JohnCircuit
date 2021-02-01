@@ -3,10 +3,10 @@ import java.util.Random;
 
 public class Intro {
 
-String answer = "yes";
+private int answer = 1;
 
 
-public String getAnswer(){
+public int getAnswer(){
   
   return answer;
 
