@@ -1,5 +1,22 @@
 import java.util.Scanner;
+import java.util.Random;
+
+public class Intro {
+
+public String answer(){
+  String answer = "yes";
+  return answer;
+
+}
+}
+
+
+
+
+
+
 //Down below it is asking you a question, and depending on the result it will either loop or let you continue.
+/*
 public class Intro {
   public void start() {
       System.out.println("It looks like you want to be dealt in, is that true?");
@@ -28,3 +45,4 @@ public class Intro {
       }
   }
 }
+*/

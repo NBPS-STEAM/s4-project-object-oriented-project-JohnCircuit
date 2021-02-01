@@ -8,7 +8,41 @@ public class App {
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
       Intro game = new Intro();
-      game.start();
+      //game.start();
+      System.out.println("It looks like you want to be dealt in, is that true?");
+      
+      String start = scanner.nextLine();
+      System.out.println("");
+      System.out.println("");
+      while (game.answer().equalsIgnoreCase("yes"))
+      {
+        if (!game.answer().equalsIgnoreCase("yes"))
+        {
+          
+          System.out.println("Sorry I didn't quite get that.");
+          System.out.println("");
+          start = scanner.nextLine();
+          
+        }
+        if (start.equals("yes") || start.equals("Yes"))
+        {
+          System.out.println("Alright lets start!");
+          System.out.println("");
+          break;
+        } 
+      }
+
+
+
+
+
+
+
+
+
+
+
+      
       //Down below is the function that will actually play the game.
       drawOrHold();
       
