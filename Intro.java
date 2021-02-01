@@ -4,13 +4,20 @@ import java.util.Random;
 public class Intro {
 
 private int answer = 1;
-
+private int score;
 
 public int getAnswer(){
   
   return answer;
 
 }
+
+public void setScore(int y){
+
+    score = y;
+
+}
+
 }
 
 

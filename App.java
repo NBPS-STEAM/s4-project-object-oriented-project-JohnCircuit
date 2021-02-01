@@ -34,15 +34,14 @@ public class App {
            {
           i++;
           drawOrHold();
-          
-      }
+          }
 
-    }
+    
         } 
         if (start == 2) 
         {
           
-          System.out.println("Sorry I didn't quite get that.");
+          System.out.println("Alright maybe another time then.");
           System.out.println("");
           start = scanner.nextInt();
           
@@ -58,18 +57,6 @@ public class App {
       }
 
 
-
-
-
-
-
-
-
-
-
-      
-
-
     public static void drawOrHold()
     {
       //It starts off by asking you how many cards you would like to draw, from there it will tell you if you won or not. Depending on what cards you get you will get a particular prompt.
@@ -79,7 +66,7 @@ public class App {
       System.out.println("");
       System.out.println("");
       int hand = 0;
-      
+      Ending value = new Ending();
       if (draw >= 1)
       {
         for(int i = 1; i <= draw; i++)
@@ -89,7 +76,7 @@ public class App {
         score = 1+card.nextInt(11);
         System.out.println(score);
         
-        hand = hand + score;
+        hand = hand + value.getScore(score);
         //This is how it will generate a random number and add it to your hand.
     	}
         //Down below is all the esponses to if you win or lose, if you are over 21 or under 20 then you lose, but if you are within the range you win!
