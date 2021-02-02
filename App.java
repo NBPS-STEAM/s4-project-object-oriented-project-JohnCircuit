@@ -4,7 +4,7 @@ import java.util.Random;
 public class App {
 //The main class.
   static int hand;
-  static int sum;
+  
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
       Intro game = new Intro();
@@ -26,6 +26,7 @@ public class App {
           System.out.println("");
           drawOrHold();
           System.out.println("Now that you know what the game is like, how many times would you like to play again?"); 
+          int no = 2;
       
       
           int rerun = scanner.nextInt();
@@ -38,15 +39,15 @@ public class App {
 
     
         } 
-        if (start == 2) 
+        if (start.equals(no)) 
         {
           
-          System.out.println("Alright maybe another time then.");
+          System.out.println("Alright well restart the program when you change your mind.");
           System.out.println("");
           start = scanner.nextInt();
           
         }
-        if(!(start == game.getAnswer()) && !(start == 2))
+        if(!(start == game.getAnswer()) && !(start == no))
         {
           
           System.out.println("I don't understand.");
