@@ -7,13 +7,21 @@ int start = scanner.nextInt();
 private int answer = 1;
 static int no = 2;
 
-/*
-public int getAnswer(){
+
+
+public void greeting(){
   
-  return answer;
+  System.out.println("It looks like you want to be dealt in, is that true?");
+  System.out.println("Enter '1' for yes and '2' for no");
 
 }
-*/
+
+public void replay(){
+
+  System.out.println("Now that you know what the game is like, how many times would you like to play again?");    
+
+}
+
 public int Begin(int start){
 while (start != answer)
       {
@@ -37,7 +45,7 @@ while (start != answer)
         else 
         {
           
-          System.out.println("what.");
+          System.out.println("what?");
           System.out.println("");
           start = scanner.nextInt();
           
