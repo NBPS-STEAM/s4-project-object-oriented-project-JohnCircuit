@@ -22,16 +22,15 @@ public void replay(){
 
 }
 
-public int Begin(int start){
-while (start != answer)
+public void Begin(int start){
+  while (start != answer)
       {
 
         if (start == answer)
         {
           System.out.println("Alright lets start!");
           System.out.println("");
-          break;
-          return you;
+          
           
         } 
         if (start == no)
@@ -50,12 +49,10 @@ while (start != answer)
           start = scanner.nextInt();
           
         }
+        
       }
+
     }
-
-
-
-
 
 }
 
