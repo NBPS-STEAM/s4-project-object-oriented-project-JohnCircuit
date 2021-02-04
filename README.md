@@ -32,16 +32,16 @@ Part 1 will not be considered complete until all these steps are completed.
 
 ### Part 2
 As you begin coding, ensure that your project contains all the following criteria:
-- [ ] One main class (App) from which the program executes,
-- [ ] Two or more other classes,
+- [X] One main class (App) from which the program executes,
+- [X] Two or more other classes,
 - [ ] Constructors with overloading,
-- [ ] Appropriate accessor & mutator methods,
-- [ ] Static variables & methods
+- [X] Appropriate accessor & mutator methods,
+- [X] Static variables & methods
 
 As you work on your project, be sure to...
-- [ ] Regularly commit your code, i.e. at the end of every coding session,
+- [X] Regularly commit your code, i.e. at the end of every coding session,
 - [ ] Add comments to your code to explain its purpose and functionality
-- [ ] Add links to any resources you use to the 'worksCited.md' file
+- [X] Add links to any resources you use to the 'worksCited.md' file
 
 Refer to the grading rubric as you go to ensure you're doing the assignment correctly.
 
