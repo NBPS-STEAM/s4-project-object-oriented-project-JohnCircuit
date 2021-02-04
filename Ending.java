@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Ending {
-private int y;
+private int score;
 
 public void setScore(int y){
 

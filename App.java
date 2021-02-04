@@ -4,7 +4,7 @@ import java.util.Random;
 public class App {
 //The main class.
   static int hand;
-  
+  static int no = 2;
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
       Intro game = new Intro();
@@ -26,7 +26,7 @@ public class App {
           System.out.println("");
           drawOrHold();
           System.out.println("Now that you know what the game is like, how many times would you like to play again?"); 
-          int no = 2;
+          
       
       
           int rerun = scanner.nextInt();
@@ -39,7 +39,7 @@ public class App {
 
     
         } 
-        if (start.equals(no)) 
+        if (start == no) 
         {
           
           System.out.println("Alright well restart the program when you change your mind.");
@@ -56,9 +56,11 @@ public class App {
           
         }
       }
+    }
+    
 
 
-    public static void drawOrHold()
+    static void drawOrHold()
     {
       //It starts off by asking you how many cards you would like to draw, from there it will tell you if you won or not. Depending on what cards you get you will get a particular prompt.
       Scanner scanner = new Scanner(System.in);
