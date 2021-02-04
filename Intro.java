@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class Intro {
 Scanner scanner = new Scanner(System.in);
-int start = scanner.nextInt();
+//int start = scanner.nextInt();
 private int answer = 1;
 static int no = 2;
 

@@ -6,10 +6,12 @@ public class App {
   static int hand;
 
     public static void main(String[] args) {
-      Scanner scanner = new Scanner(System.in);
       Intro game = new Intro();
-      
       game.greeting();
+      Scanner scanner = new Scanner(System.in);
+      
+      
+      //game.greeting();
       
       int start = scanner.nextInt();
       System.out.println("");
@@ -72,14 +74,3 @@ public class App {
     }
 
 }
-
-
-
-
-
-
-
-
-
-    
-
