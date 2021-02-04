@@ -49,7 +49,7 @@ public class App {
         score = 1+card.nextInt(11);
         System.out.println(score);
         
-        hand = hand + value.getScore(score);
+        hand = hand + value.setScore(score);
         //This is how it will generate a random number and add it to your hand.
     	}
         //Down below is all the esponses to if you win or lose, if you are over 21 or under 20 then you lose, but if you are within the range you win!

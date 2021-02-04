@@ -4,13 +4,14 @@ import java.util.Random;
 public class Hand {
 private static int currentscore;
 
-public void setScore(int score){
+public int setScore(int score){
 
     score = currentscore;
+    return score;
 
 }
 
-public static int useScore() {
+public int useScore() {
 
     return currentscore;
 
