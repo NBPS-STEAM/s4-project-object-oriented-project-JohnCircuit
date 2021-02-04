@@ -4,7 +4,7 @@ import java.util.Random;
 public class App {
 //The main class.
   static int hand;
-  static int no = 2;
+  
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
       Intro game = new Intro();
@@ -17,59 +17,21 @@ public class App {
       System.out.println("");
      
       
-      while (start == game.getAnswer())
-      {
-
-        if (start == game.getAnswer())
-        {
-          System.out.println("Alright lets start!");
-          System.out.println("");
-          drawOrHold();
-          System.out.println("Now that you know what the game is like, how many times would you like to play again?"); 
-          
-      
-      
-          int rerun = scanner.nextInt();
-          int i = 0;
-          while (i < rerun)
-           {
-          i++;
-          drawOrHold();
-          }
-
-    
-        } 
-        if (start == no) 
-        {
-          
-          System.out.println("Alright well restart the program when you change your mind.");
-          System.out.println("");
-          start = scanner.nextInt();
-          
-        }
-        if(!(start == game.getAnswer()) && !(start == no))
-        {
-          
-          System.out.println("I don't understand.");
-          System.out.println("");
-          start = scanner.nextInt();
-          
-        }
-      }
+      game.Begin(start);
     }
     
 
 
     static void drawOrHold()
     {
-      //It starts off by asking you how many cards you would like to draw, from there it will tell you if you won or not. Depending on what cards you get you will get a particular prompt.
+     
       Scanner scanner = new Scanner(System.in);
       System.out.println("How many times would you like to draw?");
       int draw = scanner.nextInt();
       System.out.println("");
       System.out.println("");
       int hand = 0;
-      Ending value = new Ending();
+      Hand value = new Hand();
       if (draw >= 1)
       {
         for(int i = 1; i <= draw; i++)
@@ -102,12 +64,20 @@ public class App {
           System.out.println("");
           System.out.println("");
         }
-
+        System.out.println("Now that you know what the game is like, how many times would you like to play again?"); 
+          int rerun = scanner.nextInt();
+         int i = 0;
+          while (i < rerun)
+           {
+          i++;
+          drawOrHold();
+          }
       }
       
       
       
     }
+    
     
 
 
