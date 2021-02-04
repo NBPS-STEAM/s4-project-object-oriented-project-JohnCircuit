@@ -18,6 +18,15 @@ public class App {
      
       
       game.Begin(start);
+
+      drawOrHold();
+      int rerun = scanner.nextInt();
+         int i = 0;
+          while (i < rerun)
+           {
+          i++;
+          drawOrHold();
+          }
     }
     
 
@@ -45,14 +54,14 @@ public class App {
         //This is how it will generate a random number and add it to your hand.
     	}
         //Down below is all the esponses to if you win or lose, if you are over 21 or under 20 then you lose, but if you are within the range you win!
-        System.out.println(hand);
+        System.out.println(value.useScore());
         if (hand < 20)
         {
           System.out.println("It looks like the house had a hand of 20 or more. You lose."); 
           System.out.println("");
           System.out.println("");
         }
-        else if (hand > 21)
+        else if (value.useScore() > 21)
         {
           System.out.println("WOW it looks like your hand is to large, you busted! You lose."); 
           System.out.println("");
@@ -65,13 +74,7 @@ public class App {
           System.out.println("");
         }
         System.out.println("Now that you know what the game is like, how many times would you like to play again?"); 
-          int rerun = scanner.nextInt();
-         int i = 0;
-          while (i < rerun)
-           {
-          i++;
-          drawOrHold();
-          }
+          
       }
       
       
