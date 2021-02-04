@@ -5,30 +5,27 @@ public class App {
 //The main class.
   static int hand;
 
-    public static void main(String[] args) {
-      Intro game = new Intro();
-      game.greeting();
-      Scanner scanner = new Scanner(System.in);
+  public static void main(String[] args) {
+    Intro game = new Intro();
+    game.greeting();
+    Scanner scanner = new Scanner(System.in);
       
+    int start = scanner.nextInt();
+    System.out.println("");
+    System.out.println("");
       
-      //game.greeting();
+    game.Begin(start);
       
-      int start = scanner.nextInt();
-      System.out.println("");
-      System.out.println("");
-      
-      game.Begin(start);
-      
-      drawOrHold();
-      game.replay();
+    drawOrHold();
+    game.replay();
 
-      int rerun = scanner.nextInt();
-      int i = 1;
-      while (i < rerun)
-        {
+    int rerun = scanner.nextInt();
+    int i = 1;
+    while (i < rerun)
+      {
         drawOrHold();
         rerun--;
-        }
+      }
 
     }
 
@@ -45,15 +42,15 @@ public class App {
       if (draw >= 1)
       {
         for(int i = 1; i <= draw; i++)
-    	{
-        Random card = new Random();
-		    int score;
-        score = 1+card.nextInt(11);
-        System.out.println(score);
+    	  {
+          Random card = new Random();
+		      int score;
+          score = 1+card.nextInt(11);
+          System.out.println(score);
         
-        hand = hand + value.setScore(score);
-        //This is how it will generate a random number and add it to your hand.
-    	}
+          hand = hand + value.setScore(score);
+          //This is how it will generate a random number and add it to your hand.
+    	  }
         //Down below is all the esponses to if you win or lose, if you are over 21 or under 20 then you lose, but if you are within the range you win!
         System.out.println(value.useScore());
         if (hand < 20)

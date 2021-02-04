@@ -2,18 +2,18 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class Hand {
-private static int currentscore;
+private int currentScore;
 
 public int setScore(int score){
 
-    score = currentscore;
+    score = currentScore;
     return score;
 
 }
 
 public int useScore() {
 
-    return currentscore;
+    return currentScore;
 
 }
 
