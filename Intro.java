@@ -9,14 +9,14 @@ static int no = 2;
 
 
 
-public void greeting(){
+public void greeting(int num, double start){
   
   System.out.println("It looks like you want to be dealt in, is that true?");
   System.out.println("Enter '1' for yes and '2' for no");
 
 }
 
-public void replay(){
+public void greeting(int num){
 
   System.out.println("Now that you know what the game is like, how many times would you like to play again?");    
 

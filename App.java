@@ -7,7 +7,7 @@ public class App {
 
   public static void main(String[] args) {
     Intro game = new Intro();
-    game.greeting();
+    game.greeting(1,1.0);
     Scanner scanner = new Scanner(System.in);
       
     int start = scanner.nextInt();
@@ -15,9 +15,9 @@ public class App {
     System.out.println("");
       
     game.Begin(start);
-      
+    
     drawOrHold();
-    game.replay();
+    game.greeting(2);
 
     int rerun = scanner.nextInt();
     int i = 0;
@@ -56,18 +56,20 @@ public class App {
     	  }
         //Down below is all the esponses to if you win or lose, if you are over 21 or under 20 then you lose, but if you are within the range you win!
         System.out.println(hand);
-        if (value.useScore() < 20)
+        int small = 20;
+        int big = 21;
+        value.setScore(hand);
+        if (value.useScore() < small)
         {
           value.toSmall();
         }
-        else if (value.useScore() > 21)
+        else if (value.useScore() > big)
         {
           value.toBig();
         }
-        else 
+        else
         {
           value.justRight();
-          //System.out.println(value.bestScore);
         }
       
       }
