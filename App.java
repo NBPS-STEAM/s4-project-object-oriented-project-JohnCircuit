@@ -20,7 +20,7 @@ public class App {
     game.replay();
 
     int rerun = scanner.nextInt();
-    int i = 1;
+    int i = 0;
     while (i < rerun) 
       {
         hand = 0;
