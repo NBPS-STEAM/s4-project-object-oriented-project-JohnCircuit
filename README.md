@@ -40,7 +40,7 @@ As you begin coding, ensure that your project contains all the following criteri
 
 As you work on your project, be sure to...
 - [X] Regularly commit your code, i.e. at the end of every coding session,
-- [ ] Add comments to your code to explain its purpose and functionality
+- [X] Add comments to your code to explain its purpose and functionality
 - [X] Add links to any resources you use to the 'worksCited.md' file
 
 Refer to the grading rubric as you go to ensure you're doing the assignment correctly.
