@@ -34,7 +34,7 @@ Part 1 will not be considered complete until all these steps are completed.
 As you begin coding, ensure that your project contains all the following criteria:
 - [X] One main class (App) from which the program executes,
 - [X] Two or more other classes,
-- [ ] Constructors with overloading,
+- [X] Constructors with overloading,
 - [X] Appropriate accessor & mutator methods,
 - [X] Static variables & methods
 
